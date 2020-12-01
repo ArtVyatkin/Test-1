@@ -2,7 +2,7 @@ import java.lang.IllegalStateException
 import java.util.Queue
 import java.util.LinkedList
 
-class UniqueQueue<T>(override val size: Int) : Queue<T>, Collection<T> {
+class UniqueQueue<T>(override val size: Int) : Queue<T> {
     private val linkedList = LinkedList<T>()
 
     override fun add(element: T): Boolean {
